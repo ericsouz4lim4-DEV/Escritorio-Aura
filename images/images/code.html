@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>STUDIO AURA | Curated Excellence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Montserrat:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#131313",
+                    "tertiary": "#c9c6c5",
+                    "inverse-surface": "#e4e2e1",
+                    "primary-fixed": "#ffdea5",
+                    "primary-container": "#c5a059",
+                    "on-tertiary-fixed-variant": "#474646",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-variant": "#353535",
+                    "inverse-primary": "#775a19",
+                    "outline-variant": "#4e4639",
+                    "surface-container-highest": "#353535",
+                    "error": "#ffb4ab",
+                    "on-secondary-container": "#b7b5b4",
+                    "tertiary-fixed-dim": "#c9c6c5",
+                    "outline": "#9a8f80",
+                    "on-surface": "#e4e2e1",
+                    "on-tertiary": "#313030",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "on-secondary-fixed-variant": "#474746",
+                    "background": "#131313",
+                    "on-error-container": "#ffdad6",
+                    "surface-container-low": "#1b1c1c",
+                    "error-container": "#93000a",
+                    "surface-bright": "#393939",
+                    "tertiary-container": "#a7a5a4",
+                    "on-background": "#e4e2e1",
+                    "surface": "#131313",
+                    "on-tertiary-container": "#3c3b3b",
+                    "surface-container": "#1f2020",
+                    "on-primary-fixed": "#261900",
+                    "on-secondary": "#313030",
+                    "on-tertiary-fixed": "#1c1b1b",
+                    "primary": "#e9c176",
+                    "surface-tint": "#e9c176",
+                    "secondary": "#c8c6c5",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "on-error": "#690005",
+                    "secondary-container": "#474746",
+                    "primary-fixed-dim": "#e9c176",
+                    "surface-container-high": "#2a2a2a",
+                    "on-surface-variant": "#d1c5b4",
+                    "inverse-on-surface": "#303030",
+                    "on-primary-container": "#4e3700",
+                    "tertiary-fixed": "#e5e2e1",
+                    "on-primary": "#412d00",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "secondary-fixed": "#e5e2e1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "80px",
+                    "margin-mobile": "24px",
+                    "container-max": "1440px",
+                    "gutter": "32px",
+                    "section-gap": "160px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Playfair Display"],
+                    "label-md": ["Montserrat"],
+                    "headline-sm": ["Playfair Display"],
+                    "body-lg": ["Montserrat"],
+                    "headline-md": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "body-md": ["Montserrat"],
+                    "headline-lg-mobile": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "500"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "300"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "300"}],
+                    "headline-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #e4e2e1;
+            overflow-x: hidden;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+            color: #e9c176;
+        }
+        .gallery-card-inner-border {
+            box-shadow: inset 0 0 0 1px rgba(233, 193, 118, 0.1);
+        }
+        .curator-overlay {
+            backdrop-filter: blur(20px);
+            background-color: rgba(19, 19, 19, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-background">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface-dim/90 backdrop-blur-2xl border-b border-outline-variant/30 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-24">
+<div class="font-headline-md text-headline-md text-primary tracking-[0.2em]">STUDIO AURA</div>
+<div class="hidden md:flex gap-12">
+<a class="font-label-md text-label-md uppercase tracking-[0.15em] text-on-surface hover:text-primary transition-all duration-500" href="#projects">PROJECTS</a>
+<a class="font-label-md text-label-md uppercase tracking-[0.15em] text-on-surface hover:text-primary transition-all duration-500" href="#process">PROCESS</a>
+<a class="font-label-md text-label-md uppercase tracking-[0.15em] text-on-surface hover:text-primary transition-all duration-500" href="#about">ABOUT</a>
+<a class="font-label-md text-label-md uppercase tracking-[0.15em] text-on-surface hover:text-primary transition-all duration-500" href="#contact">CONTACT</a>
+</div>
+<button class="font-label-md text-label-md uppercase tracking-[0.15em] border border-primary px-8 py-3 text-primary hover:bg-primary/10 transition-colors duration-300 active:scale-[0.98]">
+            WHATSAPP
+        </button>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-[0.4]" data-alt="A cinematic, wide shot of a masterfully designed luxury living room at dusk. The space features floor-to-ceiling windows overlooking a serene garden, with warm ambient lighting reflecting off dark marble floors and gold-leaf architectural details. The aesthetic is ultra-minimalist and sophisticated, emphasizing the 'Curated Void' philosophy with plenty of negative space and premium materials like charcoal wood and brushed brass. The atmosphere is quiet, expensive, and tranquil." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDO_gQioMOs-A2JJGJGoSS-1WHMhYVBUUD8AHZedkXSFkB8fZnFw0DyLHk6CQywyeI1ZcItXUwks1i375izdomkxy3w0h9zm4rw3adp0omeVin0RrXcoSFeNddE8xvae1J_VBYfsR5_pW7f83HL4QUSAcHwR2MU5ig9UdTpcIaXjSHa_fULloiyJPaQ96EcoSDnxdSHit4Gyjkh036K6CrLT-myLYhhJK57tOpKDdT7ptARq1VpcypOLCzLrloedHd0OLWgPrCqhVg"/>
+</div>
+<div class="relative z-10 text-center max-w-4xl px-margin-mobile">
+<h1 class="font-display-lg text-display-lg text-on-surface mb-6 tracking-widest uppercase">Studio Aura</h1>
+<p class="font-body-lg text-body-lg text-primary uppercase tracking-[0.3em] mb-12">Artesania em Interiores de Alto Padrão</p>
+<div class="flex justify-center">
+<span class="material-symbols-outlined text-4xl animate-bounce">expand_more</span>
+</div>
+</div>
+</header>
+<!-- Process Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface" id="process">
+<div class="max-w-container-max mx-auto">
+<div class="mb-24 text-center md:text-left">
+<h2 class="font-headline-lg text-headline-lg mb-4">O Processo Aura</h2>
+<div class="w-24 h-px bg-primary mx-auto md:mx-0"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Step 1 -->
+<div class="flex flex-col gap-6 p-12 border border-outline-variant/20 hover:border-primary/40 transition-all duration-700">
+<span class="material-symbols-outlined text-5xl">auto_awesome</span>
+<h3 class="font-headline-sm text-headline-sm uppercase tracking-wider">Curadoria</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Identificamos a essência e os desejos de cada cliente, selecionando materiais e texturas que contam uma história única.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col gap-6 p-12 border border-outline-variant/20 hover:border-primary/40 transition-all duration-700 md:translate-y-12">
+<span class="material-symbols-outlined text-5xl">architecture</span>
+<h3 class="font-headline-sm text-headline-sm uppercase tracking-wider">Design</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">A materialização do conceito através de traços precisos e soluções arquitetônicas que privilegiam a luz e a fluidez.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col gap-6 p-12 border border-outline-variant/20 hover:border-primary/40 transition-all duration-700">
+<span class="material-symbols-outlined text-5xl">verified_user</span>
+<h3 class="font-headline-sm text-headline-sm uppercase tracking-wider">Execução</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Gestão rigorosa de cada detalhe, garantindo que a entrega final reflita a perfeição planejada no papel.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest" id="projects">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<h2 class="font-headline-lg text-headline-lg">Projetos Selecionados</h2>
+<a class="font-label-md text-label-md text-primary border-b border-primary/30 pb-2 hover:border-primary transition-all" href="#">VER TODOS</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Project 1 -->
+<div class="md:col-span-8 group relative overflow-hidden aspect-[16/9]">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 gallery-card-inner-border" data-alt="Close-up of a sophisticated penthouse dining area with a massive dark oak table. Minimalist pendant lighting in brushed gold hangs precisely above the center. The background features a textured charcoal wall with a single piece of abstract sculpture. High-contrast lighting creates dramatic shadows and highlights the rich materiality of the wood and metal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZml5tSE5BB4fCi0KnPqFRrxTzIxcWOxm4X3xw-h72c8dhTGGfBWh_t32tVH9Cw90I1ksUfvoTHW6LGTqokHdyCpaQ3I4EA_5Y7s5UfEQFLD_iaO1BDqHqEkrIwG1yxfYRSsBYgueQcO8RLceofUh_0B37x6xgNRsbsioB2kicZIccadHN85lFzAq3_VcRDiUcn7_6ObdrOR8s-OBzjrqyB1auJBCxmcECwPS9UFgKt814R6by6uOZfPvfJw_aovZrkP2pHqQRJ2Cz"/>
+<div class="absolute inset-0 bg-surface-dim/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-12">
+<span class="font-headline-sm text-headline-sm text-white">Residência Jardins</span>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="md:col-span-4 group relative overflow-hidden aspect-[3/4]">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 gallery-card-inner-border" data-alt="An elegant master bathroom in a high-end Sao Paulo apartment. Smooth matte black stone tiles cover the walls, contrasting with a white marble vanity. Recessed warm LED lighting provides a soft glow, and gold faucets add a touch of understated opulence. The space feels like a private spa, extremely clean and well-ordered." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK62S3dpx9-fliCDPst6kxSJtpXIZ4y1zXaNZomMo6ma42criDKtt5evaIGgNJvEgX8jXhmj7JhBcZhD_5p9at7znItjNbJUmhIGfigt3wV1ifQ6-KezkVyxbmDn9ObdEQDsicuCCmpjEsyvppBcIcfDf6sWDQ6K0dKhaU9YXBYpVPcKdV0PquVV3A21tf301eAifFpgdEBIKmNgk7UbjDgx3SZ6dFnUxDnltN0WxW3jUryN3RyhoFPShKF-PeMd9AZiTN28z69xXz"/>
+<div class="absolute inset-0 bg-surface-dim/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<span class="font-headline-sm text-headline-sm text-white">Apartamento Itaim</span>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="md:col-span-4 group relative overflow-hidden aspect-[1/1]">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 gallery-card-inner-border" data-alt="A minimalist library or home office featuring floor-to-ceiling dark wood shelving. A single lounge chair in buttery tan leather sits next to a designer floor lamp made of thin black metal and gold accents. Large windows reveal a city skyline at night, softly blurred. The mood is intellectual, calm, and deeply luxurious." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj_nTpizu3NcG_ufze0DAcvVthKRcM-8yTnCq9m_HruxtCu2b_bgB6nPP8qnxGKlKCr05OytGNZGximHAk0TsgihyEA_ZctEFz4BEkucuBGbKuYmABB8r0b_1VmhOcuJjAeuS1iffArsPQLMg27KQIN3U21v5ffO-RM9vDJ8v88QJFS47trED_jj1gWLYx55N3GdDy7HwBhku6oeNw7R3H0l64SRg23YZBdis483c3nmk18X_LwQp7jzeAYOMlPFRRzpwiKLlGwMcC"/>
+<div class="absolute inset-0 bg-surface-dim/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<span class="font-headline-sm text-headline-sm text-white">Refúgio Urbano</span>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="md:col-span-8 group relative overflow-hidden aspect-[16/9]">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 gallery-card-inner-border" data-alt="Kitchen area of a modern mansion featuring a large waterfall island made of Calacatta marble. Integrated dark wood cabinetry hides all appliances for a seamless look. Minimalist bar stools in dark velvet are tucked under the island. The lighting is sophisticated, utilizing hidden strips and focused spotlights to create a gallery-like presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL5XcOofh-_qehufSpP5j00DS0a51kUu4fkJvZZxbeuOyw61UX0XFVC0UvMeuMZisouOxBeX0ylCgd-U7nTqcubQ6mZyQsj6kJjSv3z_VWuFcRVM0toMMvjH37HhlJTN_X86deKapz3zzixJSqmG6fJZMBIPc0ju7vGpV2YuMy2Gyb3C7jA65nwVhMsrb2i1ulcTufaqtvamW3IJ5vMpce75PrwavdMV3k3CHTrJWr-Fe47wLPbaiC--6be5t3_IIQFtlU2gLmxqMM"/>
+<div class="absolute inset-0 bg-surface-dim/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-12">
+<span class="font-headline-sm text-headline-sm text-white">Loft Vila Nova</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop overflow-hidden" id="about">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 items-center gap-16">
+<div class="md:col-span-5 relative">
+<div class="absolute -inset-4 border border-primary/20 -z-10"></div>
+<img class="w-full aspect-[4/5] object-cover gallery-card-inner-border grayscale hover:grayscale-0 transition-all duration-1000" data-alt="A professional portrait of Marina Vasconcelos, a sophisticated architect. She is dressed in a tailored charcoal blazer, standing in a brightly lit, minimalist architectural studio. The background is softly out of focus, showing architectural models and sketches. She has a confident yet approachable expression. The lighting is soft and flattering, highlighting the professional and artistic environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgxEQQDP7X53sdprK_nXp9ntKwtwYgdiv8FwRsvHJVcCFW_DOS6jQ4ODL7k2FVeH2_iVl8ViShEuZT6BBI7sYvrd_MMj15qNpfiuUjaMB1HRD9B-yOoIv_7HpYg7YUDIV1URmmtikI9l2_QTGqJh3L5TWCGXPahKTQxkvjnA0zHm0ODgj75AMJyBzBwABV0uFQWyAhdgFZWDaeWYfACEznsVL324TtmyH8gDDjysBzX4_3UP15UP7TFgMD9599HKMUDU2giDgU5IiX"/>
+</div>
+<div class="md:col-span-7 space-y-8">
+<span class="font-label-md text-label-md text-primary tracking-[0.3em] uppercase">A Fundadora</span>
+<h2 class="font-display-lg text-display-lg leading-tight">Marina Vasconcelos</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Arquiteta e visionária, Marina fundou o Studio Aura com a premissa de que o luxo não reside no excesso, mas na precisão absoluta do design. Com formação sólida e um olhar apurado para a curadoria de materiais, ela transforma espaços em santuários de calma e sofisticação no coração de São Paulo.
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant/80 max-w-xl italic border-l-2 border-primary pl-6">
+                    "Minha visão é criar espaços que respirem. Lugares onde cada centímetro foi pensado para elevar a experiência de quem os habita."
+                </p>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-center mb-24">Experiências</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Quote 1 -->
+<div class="space-y-6">
+<div class="flex text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg italic">"O Studio Aura não entregou apenas um projeto, mas um novo estilo de vida. A atenção aos detalhes é algo que nunca vi antes."</p>
+<p class="font-label-md text-label-md text-primary tracking-widest">— RICARDO M., JARDINS</p>
+</div>
+<!-- Quote 2 -->
+<div class="space-y-6">
+<div class="flex text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg italic">"A Marina tem um olhar clínico para o que é essencial. Minha casa hoje parece uma galeria de arte privada, mas com o conforto de um lar."</p>
+<p class="font-label-md text-label-md text-primary tracking-widest">— HELENA V., ITAIM</p>
+</div>
+<!-- Quote 3 -->
+<div class="space-y-6">
+<div class="flex text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg italic">"Profissionalismo impecável. O processo de execução foi fluido e o resultado final superou todas as nossas expectativas de luxo."</p>
+<p class="font-label-md text-label-md text-primary tracking-widest">— FABRÍCIO L., VILA NOVA</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop" id="contact">
+<div class="max-w-container-max mx-auto bg-surface-container p-12 md:p-24 border border-outline-variant/10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24">
+<div>
+<h2 class="font-display-lg text-display-lg mb-8">Fale Conosco</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">Estamos prontos para transformar sua visão em realidade. Inicie sua jornada de design conosco hoje.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined">call</span>
+<span class="font-label-md text-label-md">+55 (11) 99999-9999</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-label-md text-label-md">contato@studioaura.com</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined">location_on</span>
+<span class="font-label-md text-label-md">São Paulo, Brasil</span>
+</div>
+</div>
+</div>
+<form class="space-y-8">
+<div>
+<label class="font-label-md text-[10px] uppercase tracking-widest text-primary mb-2 block">Nome</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-4 focus:ring-0 focus:border-primary transition-colors text-on-surface" type="text"/>
+</div>
+<div>
+<label class="font-label-md text-[10px] uppercase tracking-widest text-primary mb-2 block">E-mail</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-4 focus:ring-0 focus:border-primary transition-colors text-on-surface" type="email"/>
+</div>
+<div>
+<label class="font-label-md text-[10px] uppercase tracking-widest text-primary mb-2 block">Mensagem</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant py-4 focus:ring-0 focus:border-primary transition-colors text-on-surface resize-none" rows="4"></textarea>
+</div>
+<button class="w-full font-label-md text-label-md uppercase tracking-[0.2em] bg-primary text-on-primary py-6 hover:bg-primary/90 transition-all">
+                        Enviar Mensagem
+                    </button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-dim border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop py-20 gap-8">
+<div class="font-headline-sm text-headline-sm text-primary tracking-widest uppercase">STUDIO AURA</div>
+<div class="flex gap-8">
+<a class="font-label-md text-label-md uppercase tracking-[0.15em] text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">INSTAGRAM</a>
+<a class="font-label-md text-label-md uppercase tracking-[0.15em] text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">LINKEDIN</a>
+<a class="font-label-md text-label-md uppercase tracking-[0.15em] text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">PINTEREST</a>
+<a class="font-label-md text-label-md uppercase tracking-[0.15em] text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">PRIVACY</a>
+</div>
+<div class="font-label-md text-label-md uppercase tracking-[0.15em] text-on-surface-variant">© 2024 STUDIO AURA. CURATED EXCELLENCE.</div>
+</footer>
+</body></html>
